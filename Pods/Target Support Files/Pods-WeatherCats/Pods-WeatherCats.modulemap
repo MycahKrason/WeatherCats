@@ -1,0 +1,6 @@
+framework module Pods_WeatherCats {
+  umbrella header "Pods-WeatherCats-umbrella.h"
+
+  export *
+  module * { export * }
+}
