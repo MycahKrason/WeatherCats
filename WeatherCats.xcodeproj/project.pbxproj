@@ -11,6 +11,19 @@
 		7707345023B0201600E20095 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7707344F23B0201600E20095 /* WeatherData.swift */; };
 		773584F223D938FA0030FCBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 773584F123D938FA0030FCBF /* GoogleService-Info.plist */; };
 		773584F523D93FC90030FCBF /* AppDelegate+PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773584F423D93FC90030FCBF /* AppDelegate+PushNotifications.swift */; };
+		7735852623DCDBFB0030FCBF /* meow7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852323DCDBFB0030FCBF /* meow7.mp3 */; };
+		7735852723DCDBFB0030FCBF /* meow3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852423DCDBFB0030FCBF /* meow3.mp3 */; };
+		7735852823DCDBFB0030FCBF /* meow6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852523DCDBFB0030FCBF /* meow6.mp3 */; };
+		7735852C23DCE2460030FCBF /* meow1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852923DCE2460030FCBF /* meow1.mp3 */; };
+		7735852D23DCE2460030FCBF /* meow2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852A23DCE2460030FCBF /* meow2.mp3 */; };
+		7735852E23DCE2460030FCBF /* meow5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852B23DCE2460030FCBF /* meow5.mp3 */; };
+		7735853023DCE47C0030FCBF /* buttonClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852F23DCE47C0030FCBF /* buttonClick.mp3 */; };
+		7735853223DCE8650030FCBF /* whoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735853123DCE8650030FCBF /* whoosh.mp3 */; };
+		7735853E23DD02CE0030FCBF /* AmaticSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853B23DD01E20030FCBF /* AmaticSC-Bold.ttf */; };
+		7735853F23DD02E70030FCBF /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853C23DD01E20030FCBF /* AmaticSC-Regular.ttf */; };
+		7735854023DD02EB0030FCBF /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853D23DD01E20030FCBF /* OpenSansCondensed-Bold.ttf */; };
+		7735854123DD02EB0030FCBF /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853923DD01E20030FCBF /* OpenSansCondensed-Light.ttf */; };
+		7735854223DD02EB0030FCBF /* OpenSansCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853A23DD01E20030FCBF /* OpenSansCondensed-LightItalic.ttf */; };
 		7761CE1523CA4D33008DE6DE /* RetrieveCatOutfits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1423CA4D33008DE6DE /* RetrieveCatOutfits.swift */; };
 		7761CE1823CBCE94008DE6DE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1723CBCE94008DE6DE /* UIViewExtension.swift */; };
 		7761CE1A23CBCF0C008DE6DE /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1923CBCF0C008DE6DE /* UIImageViewExtension.swift */; };
@@ -33,6 +46,19 @@
 		773584F123D938FA0030FCBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		773584F323D93F4F0030FCBF /* WeatherCats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherCats.entitlements; sourceTree = "<group>"; };
 		773584F423D93FC90030FCBF /* AppDelegate+PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotifications.swift"; sourceTree = "<group>"; };
+		7735852323DCDBFB0030FCBF /* meow7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow7.mp3; sourceTree = "<group>"; };
+		7735852423DCDBFB0030FCBF /* meow3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow3.mp3; sourceTree = "<group>"; };
+		7735852523DCDBFB0030FCBF /* meow6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow6.mp3; sourceTree = "<group>"; };
+		7735852923DCE2460030FCBF /* meow1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow1.mp3; sourceTree = "<group>"; };
+		7735852A23DCE2460030FCBF /* meow2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow2.mp3; sourceTree = "<group>"; };
+		7735852B23DCE2460030FCBF /* meow5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow5.mp3; sourceTree = "<group>"; };
+		7735852F23DCE47C0030FCBF /* buttonClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonClick.mp3; sourceTree = "<group>"; };
+		7735853123DCE8650030FCBF /* whoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whoosh.mp3; sourceTree = "<group>"; };
+		7735853923DD01E20030FCBF /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; };
+		7735853A23DD01E20030FCBF /* OpenSansCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		7735853B23DD01E20030FCBF /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
+		7735853C23DD01E20030FCBF /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
+		7735853D23DD01E20030FCBF /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		7761CE1423CA4D33008DE6DE /* RetrieveCatOutfits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveCatOutfits.swift; sourceTree = "<group>"; };
 		7761CE1723CBCE94008DE6DE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7761CE1923CBCF0C008DE6DE /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -95,6 +121,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		773584F823DBEF670030FCBF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7735853123DCE8650030FCBF /* whoosh.mp3 */,
+				7735852F23DCE47C0030FCBF /* buttonClick.mp3 */,
+				7735852923DCE2460030FCBF /* meow1.mp3 */,
+				7735852A23DCE2460030FCBF /* meow2.mp3 */,
+				7735852B23DCE2460030FCBF /* meow5.mp3 */,
+				7735852423DCDBFB0030FCBF /* meow3.mp3 */,
+				7735852523DCDBFB0030FCBF /* meow6.mp3 */,
+				7735852323DCDBFB0030FCBF /* meow7.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7735853323DD016C0030FCBF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7735853B23DD01E20030FCBF /* AmaticSC-Bold.ttf */,
+				7735853C23DD01E20030FCBF /* AmaticSC-Regular.ttf */,
+				7735853D23DD01E20030FCBF /* OpenSansCondensed-Bold.ttf */,
+				7735853923DD01E20030FCBF /* OpenSansCondensed-Light.ttf */,
+				7735853A23DD01E20030FCBF /* OpenSansCondensed-LightItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7761CE1623CBCE69008DE6DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +188,8 @@
 		77FBD69023A822CE00F91A8C /* WeatherCats */ = {
 			isa = PBXGroup;
 			children = (
+				7735853323DD016C0030FCBF /* Fonts */,
+				773584F823DBEF670030FCBF /* Sounds */,
 				773584F323D93F4F0030FCBF /* WeatherCats.entitlements */,
 				7761CE1D23CEBDA4008DE6DE /* Gifs */,
 				7761CE1623CBCE69008DE6DE /* Extensions */,
@@ -220,11 +275,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7735852C23DCE2460030FCBF /* meow1.mp3 in Resources */,
+				7735852623DCDBFB0030FCBF /* meow7.mp3 in Resources */,
+				7735853E23DD02CE0030FCBF /* AmaticSC-Bold.ttf in Resources */,
 				77FBD69E23A822D200F91A8C /* LaunchScreen.storyboard in Resources */,
+				7735854223DD02EB0030FCBF /* OpenSansCondensed-LightItalic.ttf in Resources */,
+				7735852E23DCE2460030FCBF /* meow5.mp3 in Resources */,
+				7735853F23DD02E70030FCBF /* AmaticSC-Regular.ttf in Resources */,
 				77FBD69B23A822D200F91A8C /* Assets.xcassets in Resources */,
 				773584F223D938FA0030FCBF /* GoogleService-Info.plist in Resources */,
+				7735852723DCDBFB0030FCBF /* meow3.mp3 in Resources */,
+				7735852823DCDBFB0030FCBF /* meow6.mp3 in Resources */,
 				77FBD69923A822CE00F91A8C /* Main.storyboard in Resources */,
+				7735854123DD02EB0030FCBF /* OpenSansCondensed-Light.ttf in Resources */,
 				7761CE1F23CEBDB1008DE6DE /* rain.gif in Resources */,
+				7735853223DCE8650030FCBF /* whoosh.mp3 in Resources */,
+				7735852D23DCE2460030FCBF /* meow2.mp3 in Resources */,
+				7735854023DD02EB0030FCBF /* OpenSansCondensed-Bold.ttf in Resources */,
+				7735853023DCE47C0030FCBF /* buttonClick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

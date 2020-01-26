@@ -11,6 +11,7 @@
 
 import UIKit
 import CoreLocation
+import AVFoundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate{
 
@@ -38,6 +39,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     var isSnowby = true
     var catChosen : String?
     var contentHasLoaded = false
+    var meowAudioPlayer : AVPlayer!
+    var buttonClickAudioPlayer : AVPlayer!
+    var spinAudioPlayer : AVPlayer!
+    
     
     //User Defaults
     let defaults = UserDefaults.standard
@@ -73,14 +78,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             snowbyBtnDisplay.isUserInteractionEnabled = false
             kobraBtnDisplay.isUserInteractionEnabled = true
             snowbyBtnDisplay.titleLabel?.alpha = 1
-            kobraBtnDisplay.titleLabel?.alpha = 0.5
+            kobraBtnDisplay.titleLabel?.alpha = 0.4
             catChosen = "snowby"
             
         }else{
             
             snowbyBtnDisplay.isUserInteractionEnabled = true
             kobraBtnDisplay.isUserInteractionEnabled = false
-            snowbyBtnDisplay.titleLabel?.alpha = 0.5
+            snowbyBtnDisplay.titleLabel?.alpha = 0.4
             kobraBtnDisplay.titleLabel?.alpha = 1
             catChosen = "kobra"
             
@@ -136,8 +141,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             let lat = String(currentLocation.coordinate.latitude)
             
             //TEST
-//            let latTest = "40.71728515625"
-//            let lonTest = "-80.1403875901721"
+//            let lat = "40.71728515625"
+//            let lon = "-80.1403875901721"
             
             //Get the Weather Data
             RetrieveWeatherData().getWeatherURLForForecast(lattitude: lat, longitude: lon, completion: { error,
@@ -252,14 +257,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             }, completion: nil)
             
             //Change the text colors
-            dayDisplay.textColor = UIColor.black
-            tempDisplay.textColor = UIColor.black
-            forecastDisplay.textColor = UIColor.black
-            outfitExplanationDisplay.textColor = UIColor.black
+            outfitExplanationDisplay.textColor = UIColor.darkGray
             
             //change the alpha of the images
             dayToggleImageDisplay.alpha = 1
-            nightToggleImageDisplay.alpha = 0.3
+            nightToggleImageDisplay.alpha = 0.2
             
         }else{
             
@@ -274,13 +276,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             }, completion: nil)
             
             //Change the text colors
-            dayDisplay.textColor = UIColor.white
-            tempDisplay.textColor = UIColor.white
-            forecastDisplay.textColor = UIColor.white
             outfitExplanationDisplay.textColor = UIColor.white
             
             //change the alpha of the images
-            dayToggleImageDisplay.alpha = 0.3
+            dayToggleImageDisplay.alpha = 0.2
             nightToggleImageDisplay.alpha = 1
             
         }
@@ -335,15 +334,50 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         }else{
             rainBackgroundDisplay.alpha = 0
         }
+        
+        //Play meow
+        playCatMeow()
+    }
+    
+    func playCatMeow() {
+        
+        //Create an array of meow sounds and randomly select one to play
+        let meowSoundsArray : [String] = [
+            "meow1","meow2","meow3","meow5", "meow6", "meow7"
+        ]
+        
+        var chosenMeow = meowSoundsArray.randomElement()
+        
+        
+        print("\n\n\n\(chosenMeow)\n\n\n")
+        let url = Bundle.main.url(forResource: chosenMeow, withExtension: "mp3")
+        meowAudioPlayer = AVPlayer(url: url!)
+        meowAudioPlayer.volume = 0.6
+        meowAudioPlayer?.play()
+    }
+    
+    func playBtnSound(){
+        let url = Bundle.main.url(forResource: "buttonClick", withExtension: "mp3")
+        buttonClickAudioPlayer = AVPlayer(url: url!)
+        buttonClickAudioPlayer.volume = 0.3
+        buttonClickAudioPlayer?.play()
+    }
+    
+    func playSpinSound(){
+        let url = Bundle.main.url(forResource: "whoosh", withExtension: "mp3")
+        spinAudioPlayer = AVPlayer(url: url!)
+        spinAudioPlayer.volume = 0.9
+        spinAudioPlayer?.play()
     }
 
-    
     
     //***********************
     //****** MARK: UI Buttons
     //***********************
     
     @IBAction func nextDayBtnPressed(_ sender: Any) {
+        playBtnSound()
+        playSpinSound()
         
         activityIndicatorDisplay.startAnimating()
         
@@ -406,6 +440,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func previousDayBtnPressed(_ sender: Any) {
+        playBtnSound()
+        playSpinSound()
         
         activityIndicatorDisplay.startAnimating()
         
@@ -454,6 +490,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func dayToggleBtnPressed(_ sender: Any) {
+        playBtnSound()
+        playSpinSound()
         
         activityIndicatorDisplay.startAnimating()
         
@@ -492,6 +530,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func nightToggleBtnPressed(_ sender: Any) {
+        playBtnSound()
+        playSpinSound()
         
         activityIndicatorDisplay.startAnimating()
         
@@ -550,10 +590,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func kobraBtnPressed(_ sender: Any) {
+        playBtnSound()
         
         activityIndicatorDisplay.startAnimating()
         
-        snowbyBtnDisplay.titleLabel?.alpha = 0.5
+        snowbyBtnDisplay.titleLabel?.alpha = 0.4
         kobraBtnDisplay.titleLabel?.alpha = 1
         
         snowbyBtnDisplay.isUserInteractionEnabled = true
@@ -588,11 +629,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func snowbyBtnPressed(_ sender: Any) {
+        playBtnSound()
         
         activityIndicatorDisplay.startAnimating()
         
         snowbyBtnDisplay.titleLabel?.alpha = 1
-        kobraBtnDisplay.titleLabel?.alpha = 0.5
+        kobraBtnDisplay.titleLabel?.alpha = 0.4
         
         snowbyBtnDisplay.isUserInteractionEnabled = false
         kobraBtnDisplay.isUserInteractionEnabled = true

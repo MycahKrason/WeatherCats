@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmaticSC-Bold.ttf">
+            <string>AmaticSC-Bold</string>
+        </array>
+        <array key="OpenSansCondensed-Bold.ttf">
+            <string>OpenSansCondensed-Bold</string>
+        </array>
+        <array key="OpenSansCondensed-Light.ttf">
+            <string>OpenSansCondensed-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,7 +26,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-Fb-hUK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CATZ_bg_daytime" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-JR-ofP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CATZ_bg_night2" translatesAutoresizingMaskIntoConstraints="NO" id="bTE-Fb-hUK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0Ni-x8-0pS">
@@ -23,16 +37,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-ZJ-cxb">
-                                <rect key="frame" x="83" y="64" width="248" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-ZJ-cxb">
+                                <rect key="frame" x="97" y="64" width="220" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llJ-1M-B8C">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="Bgg-u3-LQ2"/>
+                                            <constraint firstAttribute="width" constant="110" id="Bgg-u3-LQ2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="AmaticSC-Bold" family="Amatic SC" pointSize="40"/>
                                         <state key="normal" title="Kobra">
                                             <color key="titleColor" red="1" green="0.015686274509803921" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,12 +56,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-Eu-6pY">
-                                        <rect key="frame" x="128" y="0.0" width="120" height="70"/>
+                                        <rect key="frame" x="110" y="0.0" width="110" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="d7D-Op-iXT"/>
+                                            <constraint firstAttribute="width" constant="110" id="d7D-Op-iXT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="AmaticSC-Bold" family="Amatic SC" pointSize="40"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Snowby">
                                             <color key="titleColor" red="1" green="0.015686274509803921" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,14 +81,14 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frT-uQ-4jN">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="OpenSansCondensed-Light" family="Open Sans Condensed" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-85-Q7G">
                                         <rect key="frame" x="59" y="0.0" width="51" height="30"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="OpenSansCondensed-Bold" family="Open Sans Condensed" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -87,26 +101,26 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cAH-Ks-Esr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSansCondensed-Light" family="Open Sans Condensed" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CATZ" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-PJ-TkL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-PJ-TkL">
                                 <rect key="frame" x="20" y="238" width="374" height="420"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-oQ-uZp">
-                                <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCh-Ep-tZl">
                                 <rect key="frame" x="20" y="704" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="roa-Xk-INK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="OpenSansCondensed-Light" family="Open Sans Condensed" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-Ir-G2l">
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-Ir-G2l">
                                 <rect key="frame" x="344" y="398" width="70" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="3ng-2P-NCK"/>
@@ -121,7 +135,7 @@
                                     <action selector="nextDayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axy-rF-Exf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6w-KO-nbb">
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6w-KO-nbb">
                                 <rect key="frame" x="0.0" y="398" width="70" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="0eG-MH-64l"/>
@@ -141,17 +155,18 @@
                                 <rect key="frame" x="133" y="772" width="148" height="70"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-we-mK6">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="70" height="70.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="1" green="0.78431372549019607" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.96862745098039216" green="0.90196078431372551" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="goy-1M-lJN"/>
                                             <constraint firstAttribute="width" constant="70" id="oVV-AL-0Lz"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.stars.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vJ3-M0-6xv">
-                                        <rect key="frame" x="78" y="-0.6666666666666714" width="70" height="69"/>
-                                        <color key="tintColor" red="0.76500627259226983" green="0.53330625297533418" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="78" y="-1" width="70" height="69.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.54509803921568623" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="CKj-um-U68"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="hkH-49-7yP"/>
@@ -221,6 +236,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAp-k3-VB7" secondAttribute="trailing" constant="20" id="9jY-Bs-Rvx"/>
                             <constraint firstItem="g6w-KO-nbb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AZb-Uy-fJO"/>
                             <constraint firstItem="OCh-Ep-tZl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JUa-Lx-oh0"/>
+                            <constraint firstItem="HOW-JR-ofP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JwL-Cl-big"/>
                             <constraint firstItem="0tO-up-9Ke" firstAttribute="top" secondItem="OCh-Ep-tZl" secondAttribute="bottom" constant="8" id="KH1-jz-YaO"/>
                             <constraint firstItem="SJY-ZJ-cxb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OH3-El-fkj"/>
                             <constraint firstItem="OCh-Ep-tZl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SXB-hX-eds"/>
@@ -235,12 +251,15 @@
                             <constraint firstItem="f3I-PJ-TkL" firstAttribute="top" secondItem="eAp-k3-VB7" secondAttribute="bottom" constant="8" id="aVs-uY-hGv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0tO-up-9Ke" secondAttribute="bottom" constant="20" id="cs5-N2-cqI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3I-PJ-TkL" secondAttribute="trailing" constant="20" id="eQJ-fI-79T"/>
+                            <constraint firstAttribute="bottom" secondItem="HOW-JR-ofP" secondAttribute="bottom" id="ebD-XD-95h"/>
+                            <constraint firstItem="HOW-JR-ofP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f0M-fq-Wze"/>
                             <constraint firstItem="g6w-KO-nbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzA-f6-3PW"/>
                             <constraint firstItem="SJY-ZJ-cxb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lPp-T2-gsV"/>
                             <constraint firstItem="5Lo-Ir-G2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nKQ-85-Ju8"/>
                             <constraint firstItem="f3I-PJ-TkL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oia-rE-lKn"/>
                             <constraint firstItem="eAp-k3-VB7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q50-or-itk"/>
                             <constraint firstItem="5O1-oQ-uZp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="taG-qA-wDz"/>
+                            <constraint firstItem="HOW-JR-ofP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vOt-YM-Y1h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -265,15 +284,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+            <point key="canvasLocation" x="136.23188405797103" y="70.982142857142847"/>
         </scene>
     </scenes>
     <resources>
-        <image name="CATZ" width="1536" height="2048"/>
+        <image name="CATZ_bg_daytime" width="1026" height="1584"/>
+        <image name="CATZ_bg_night2" width="1026" height="1584"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="chevron.right" catalog="system" width="48" height="64"/>
         <image name="moon.stars.fill" catalog="system" width="64" height="62"/>
-        <image name="skyBackground" width="1024" height="1583"/>
         <image name="sun.max.fill" catalog="system" width="64" height="62"/>
     </resources>
 </document>
