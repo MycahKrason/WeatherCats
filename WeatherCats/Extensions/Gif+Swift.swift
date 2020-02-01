@@ -5,6 +5,7 @@
 //  Created by Mycah on 1/14/20.
 //  Copyright © 2020 Mycah Krason. All rights reserved.
 //
+// This is from https://github.com/swiftgif/SwiftGif/tree/master/SwiftGifCommon
 
 import UIKit
 import ImageIO

@@ -11,7 +11,6 @@ import UIKit
 let imageCache = NSCache<NSString, UIImage>()
 extension UIImageView {
 
-    
     func downloadAllImagesToCache(weatherDataArray: [WeatherData]){
         
         for weatherObject in weatherDataArray{

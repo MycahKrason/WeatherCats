@@ -6,14 +6,17 @@
 //  Copyright © 2019 Mycah Krason. All rights reserved.
 //
 
+//NOTE: The Weather API that I am using requires to calls, one that returns an general index of information pertaining to your location, and a second call which provides specific Weather information
+
 import Foundation
 
 class RetrieveWeatherData{
     
-    var weatherDataArray : [WeatherData] = [WeatherData]()
+    private var weatherDataArray : [WeatherData] = [WeatherData]()
     
     func getWeatherURLForForecast(lattitude: String, longitude: String, completion: @escaping (_ error: String, _ urlForForecast: [WeatherData]) -> ()){
         
+        //First call for general index
         let urlString = "https://api.weather.gov/points/\(lattitude),\(longitude)"
         let url = URL(string: urlString)
         
@@ -32,17 +35,13 @@ class RetrieveWeatherData{
             
             do{
                 
-                
                 if let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String : Any] {
 
                     if let weatherForecast = json["properties"] as? Dictionary<String, Any>{
                         
                         if weatherForecast["forecast"] != nil{
                             
-                            
-                            
                             //Second Call for specifics
-                            
                             let urlString = weatherForecast["forecast"] as! String
                             let url = URL(string: urlString)
                             
@@ -61,7 +60,6 @@ class RetrieveWeatherData{
                                 
                                 do{
                                                 
-                                                
                                     if let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String : Any] {
 
                                         if let retrievedProperties = json["properties"] as? [String: Any] {
@@ -79,7 +77,6 @@ class RetrieveWeatherData{
                                                     weatherArrayObject.shortForecast = weatherData["shortForecast"] as! String
                                                     weatherArrayObject.temperature = String(format: "%@", weatherData["temperature"] as! CVarArg)
                                                     
-                                                    
                                                     self.weatherDataArray.append(weatherArrayObject)
                                                     
                                                 }
@@ -90,8 +87,6 @@ class RetrieveWeatherData{
                                         }
                                         
                                     }
-                                    
-                                    
 
                                 }catch let error{
                                     
@@ -99,14 +94,9 @@ class RetrieveWeatherData{
 
                                 }
                                 
-                                
                             }
                             
                             task.resume()
-                            
-                            
-                            
-                            
                             
                         }
                          
@@ -114,18 +104,14 @@ class RetrieveWeatherData{
                     
                 }
                 
-                
-
             }catch let error{
                 
                 print(error)
 
             }
 
-
         }
         task.resume()
-        
         
     }
     

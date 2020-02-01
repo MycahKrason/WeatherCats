@@ -10,11 +10,11 @@ import Foundation
 
 class RetrieveCatOutfits{
 
-    var catOutfitArray : [WeatherData] = [WeatherData]()
+    private var catOutfitArray : [WeatherData] = [WeatherData]()
     
     func getCatOutfitsWithWeatherData(catName: String, weatherArray: [WeatherData], completion: @escaping (_ error: String, _ catOutfitsWithWeather: [WeatherData]) -> ()){
         
-        let urlString = "https://hipstatronic.com/apps/weathercats/catOutfits.json"
+        let urlString = Private().URL_FOR_CAT_IMAGES
         let url = URL(string: urlString)
         
         var request = URLRequest(url: url!)

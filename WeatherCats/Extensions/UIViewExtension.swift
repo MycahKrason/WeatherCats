@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIView {
+    
     func rotateClockwise(duration: CFTimeInterval = 0.5, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0

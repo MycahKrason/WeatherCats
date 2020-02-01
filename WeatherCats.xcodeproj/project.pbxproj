@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7707344B23B01F6600E20095 /* RetrieveWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7707344A23B01F6600E20095 /* RetrieveWeatherData.swift */; };
 		7707345023B0201600E20095 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7707344F23B0201600E20095 /* WeatherData.swift */; };
-		773584F223D938FA0030FCBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 773584F123D938FA0030FCBF /* GoogleService-Info.plist */; };
 		773584F523D93FC90030FCBF /* AppDelegate+PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773584F423D93FC90030FCBF /* AppDelegate+PushNotifications.swift */; };
 		7735852623DCDBFB0030FCBF /* meow7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852323DCDBFB0030FCBF /* meow7.mp3 */; };
 		7735852723DCDBFB0030FCBF /* meow3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7735852423DCDBFB0030FCBF /* meow3.mp3 */; };
@@ -24,11 +23,14 @@
 		7735854023DD02EB0030FCBF /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853D23DD01E20030FCBF /* OpenSansCondensed-Bold.ttf */; };
 		7735854123DD02EB0030FCBF /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853923DD01E20030FCBF /* OpenSansCondensed-Light.ttf */; };
 		7735854223DD02EB0030FCBF /* OpenSansCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7735853A23DD01E20030FCBF /* OpenSansCondensed-LightItalic.ttf */; };
+		7735854423DD21280030FCBF /* rain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7735854323DD21280030FCBF /* rain.gif */; };
+		7735854623DD21940030FCBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7735854523DD21940030FCBF /* GoogleService-Info.plist */; };
+		7735854C23DE26010030FCBF /* snow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7735854B23DE26010030FCBF /* snow.gif */; };
+		77448A9423E116BA0029C567 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77448A9323E116BA0029C567 /* Private.swift */; };
 		7761CE1523CA4D33008DE6DE /* RetrieveCatOutfits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1423CA4D33008DE6DE /* RetrieveCatOutfits.swift */; };
 		7761CE1823CBCE94008DE6DE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1723CBCE94008DE6DE /* UIViewExtension.swift */; };
 		7761CE1A23CBCF0C008DE6DE /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1923CBCF0C008DE6DE /* UIImageViewExtension.swift */; };
 		7761CE1C23CEBA93008DE6DE /* Gif+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761CE1B23CEBA93008DE6DE /* Gif+Swift.swift */; };
-		7761CE1F23CEBDB1008DE6DE /* rain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7761CE1E23CEBDB0008DE6DE /* rain.gif */; };
 		77FBD69223A822CE00F91A8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBD69123A822CE00F91A8C /* AppDelegate.swift */; };
 		77FBD69423A822CE00F91A8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBD69323A822CE00F91A8C /* SceneDelegate.swift */; };
 		77FBD69623A822CE00F91A8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBD69523A822CE00F91A8C /* ViewController.swift */; };
@@ -43,7 +45,6 @@
 		6EB3AF569AF7A2AAAF51227F /* Pods-WeatherCats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherCats.debug.xcconfig"; path = "Target Support Files/Pods-WeatherCats/Pods-WeatherCats.debug.xcconfig"; sourceTree = "<group>"; };
 		7707344A23B01F6600E20095 /* RetrieveWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveWeatherData.swift; sourceTree = "<group>"; };
 		7707344F23B0201600E20095 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		773584F123D938FA0030FCBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		773584F323D93F4F0030FCBF /* WeatherCats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherCats.entitlements; sourceTree = "<group>"; };
 		773584F423D93FC90030FCBF /* AppDelegate+PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotifications.swift"; sourceTree = "<group>"; };
 		7735852323DCDBFB0030FCBF /* meow7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meow7.mp3; sourceTree = "<group>"; };
@@ -59,11 +60,14 @@
 		7735853B23DD01E20030FCBF /* AmaticSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Bold.ttf"; sourceTree = "<group>"; };
 		7735853C23DD01E20030FCBF /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
 		7735853D23DD01E20030FCBF /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		7735854323DD21280030FCBF /* rain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rain.gif; sourceTree = "<group>"; };
+		7735854523DD21940030FCBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7735854B23DE26010030FCBF /* snow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snow.gif; sourceTree = "<group>"; };
+		77448A9323E116BA0029C567 /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 		7761CE1423CA4D33008DE6DE /* RetrieveCatOutfits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveCatOutfits.swift; sourceTree = "<group>"; };
 		7761CE1723CBCE94008DE6DE /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7761CE1923CBCF0C008DE6DE /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		7761CE1B23CEBA93008DE6DE /* Gif+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif+Swift.swift"; sourceTree = "<group>"; };
-		7761CE1E23CEBDB0008DE6DE /* rain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = rain.gif; path = ../../../rain.gif; sourceTree = "<group>"; };
 		77FBD68E23A822CE00F91A8C /* WeatherCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FBD69123A822CE00F91A8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77FBD69323A822CE00F91A8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		77448A9223E1168F0029C567 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				77448A9323E116BA0029C567 /* Private.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
 		7761CE1623CBCE69008DE6DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +174,8 @@
 		7761CE1D23CEBDA4008DE6DE /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
-				7761CE1E23CEBDB0008DE6DE /* rain.gif */,
+				7735854B23DE26010030FCBF /* snow.gif */,
+				7735854323DD21280030FCBF /* rain.gif */,
 			);
 			path = Gifs;
 			sourceTree = "<group>";
@@ -188,6 +201,7 @@
 		77FBD69023A822CE00F91A8C /* WeatherCats */ = {
 			isa = PBXGroup;
 			children = (
+				77448A9223E1168F0029C567 /* Private */,
 				7735853323DD016C0030FCBF /* Fonts */,
 				773584F823DBEF670030FCBF /* Sounds */,
 				773584F323D93F4F0030FCBF /* WeatherCats.entitlements */,
@@ -201,8 +215,8 @@
 				77FBD69723A822CE00F91A8C /* Main.storyboard */,
 				77FBD69A23A822D200F91A8C /* Assets.xcassets */,
 				77FBD69C23A822D200F91A8C /* LaunchScreen.storyboard */,
+				7735854523DD21940030FCBF /* GoogleService-Info.plist */,
 				77FBD69F23A822D200F91A8C /* Info.plist */,
-				773584F123D938FA0030FCBF /* GoogleService-Info.plist */,
 			);
 			path = WeatherCats;
 			sourceTree = "<group>";
@@ -277,21 +291,22 @@
 			files = (
 				7735852C23DCE2460030FCBF /* meow1.mp3 in Resources */,
 				7735852623DCDBFB0030FCBF /* meow7.mp3 in Resources */,
+				7735854C23DE26010030FCBF /* snow.gif in Resources */,
 				7735853E23DD02CE0030FCBF /* AmaticSC-Bold.ttf in Resources */,
 				77FBD69E23A822D200F91A8C /* LaunchScreen.storyboard in Resources */,
 				7735854223DD02EB0030FCBF /* OpenSansCondensed-LightItalic.ttf in Resources */,
 				7735852E23DCE2460030FCBF /* meow5.mp3 in Resources */,
 				7735853F23DD02E70030FCBF /* AmaticSC-Regular.ttf in Resources */,
 				77FBD69B23A822D200F91A8C /* Assets.xcassets in Resources */,
-				773584F223D938FA0030FCBF /* GoogleService-Info.plist in Resources */,
 				7735852723DCDBFB0030FCBF /* meow3.mp3 in Resources */,
 				7735852823DCDBFB0030FCBF /* meow6.mp3 in Resources */,
 				77FBD69923A822CE00F91A8C /* Main.storyboard in Resources */,
+				7735854623DD21940030FCBF /* GoogleService-Info.plist in Resources */,
 				7735854123DD02EB0030FCBF /* OpenSansCondensed-Light.ttf in Resources */,
-				7761CE1F23CEBDB1008DE6DE /* rain.gif in Resources */,
 				7735853223DCE8650030FCBF /* whoosh.mp3 in Resources */,
 				7735852D23DCE2460030FCBF /* meow2.mp3 in Resources */,
 				7735854023DD02EB0030FCBF /* OpenSansCondensed-Bold.ttf in Resources */,
+				7735854423DD21280030FCBF /* rain.gif in Resources */,
 				7735853023DCE47C0030FCBF /* buttonClick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +365,7 @@
 				77FBD69623A822CE00F91A8C /* ViewController.swift in Sources */,
 				7761CE1523CA4D33008DE6DE /* RetrieveCatOutfits.swift in Sources */,
 				7761CE1823CBCE94008DE6DE /* UIViewExtension.swift in Sources */,
+				77448A9423E116BA0029C567 /* Private.swift in Sources */,
 				7761CE1C23CEBA93008DE6DE /* Gif+Swift.swift in Sources */,
 				77FBD69223A822CE00F91A8C /* AppDelegate.swift in Sources */,
 				773584F523D93FC90030FCBF /* AppDelegate+PushNotifications.swift in Sources */,

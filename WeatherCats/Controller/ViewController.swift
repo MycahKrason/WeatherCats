@@ -33,19 +33,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var rightBtnDisplay: UIButton!
     @IBOutlet weak var leftBtnDisplay: UIButton!
     
-    var weatherDataArray : [WeatherData] = [WeatherData]()
-    var weatherDayCount = 0
-    var dayTimeSelected : Bool?
-    var isSnowby = true
-    var catChosen : String?
-    var contentHasLoaded = false
-    var meowAudioPlayer : AVPlayer!
-    var buttonClickAudioPlayer : AVPlayer!
-    var spinAudioPlayer : AVPlayer!
-    
+    private var weatherDataArray : [WeatherData] = [WeatherData]()
+    private var weatherDayCount = 0
+    private var dayTimeSelected : Bool?
+    private var isSnowby = true
+    private var catChosen : String?
+    private var contentHasLoaded = false
+    private var meowAudioPlayer : AVPlayer!
+    private var buttonClickAudioPlayer : AVPlayer!
+    private var spinAudioPlayer : AVPlayer!
     
     //User Defaults
-    let defaults = UserDefaults.standard
+    private let defaults = UserDefaults.standard
     
     //Setting Location Manager
     let locationManager = CLLocationManager()
@@ -103,9 +102,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         rainBackgroundDisplay.alpha = 0
         rainBackgroundDisplay.loadGif(name: "rain")
-
+        
+        //Testing Snow
+//        rainBackgroundDisplay.alpha = 1
+//        rainBackgroundDisplay.loadGif(name: "snow")
+//        rainBackgroundDisplay.contentMode = .scaleAspectFill
+       
     }
-    
     
     //****************************************
     //****** MARK: Location Delegate Functions
@@ -122,6 +125,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             case .authorizedAlways, .authorizedWhenInUse:
                 print("Access")
 //                locationManager.startUpdatingLocation()
+            @unknown default:
+                print("There was an error getting with Authorizatin to use Location services")
             }
         } else {
             print("Location services are not enabled")
@@ -130,8 +135,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        // The user has given permission to your app
         
+        // The user has given permission to your app
         if status == .authorizedWhenInUse || status == .authorizedAlways {
 
             locationManager.requestLocation()
@@ -160,7 +165,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
                             //The weather Array will contain the outfits at this point
                             self.weatherDataArray = result
                             
-                            //You will want to download all of the images so everything will be cached
+                            //Display forecast
                             self.tempForecastDayDisplay()
                             
                             //Turn on all of the buttons
@@ -170,8 +175,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
                             self.nightToggleBtnDisplay.isUserInteractionEnabled = true
                             self.contentHasLoaded = true
                         
-                            
-                            //TODO: Display the cat image - START HERE
+                            //Display the cat image
                             if self.catChosen == "snowby"{
                                 
                                 self.kobraBtnDisplay.isUserInteractionEnabled = true
@@ -199,15 +203,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
                                 }
                             }
                             
-                            //Play rain test
+                            //Play rain
                             if self.weatherDataArray[self.weatherDayCount].isRaining{
                                 self.rainBackgroundDisplay.alpha = 1
                             }else{
+                                
                                 self.rainBackgroundDisplay.alpha = 0
+                                
                             }
                             
-                            
-                            //Download all of the images in the background
+                            //Download all of the images in the background and cache them for faster load times
                             self.catImage.downloadAllImagesToCache(weatherDataArray: self.weatherDataArray)
                             
                         }
@@ -222,12 +227,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        //
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
-        
+        //
     }
     
     
@@ -352,7 +357,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         print("\n\n\n\(chosenMeow)\n\n\n")
         let url = Bundle.main.url(forResource: chosenMeow, withExtension: "mp3")
         meowAudioPlayer = AVPlayer(url: url!)
-        meowAudioPlayer.volume = 0.6
+        meowAudioPlayer.volume = 0.5
         meowAudioPlayer?.play()
     }
     
